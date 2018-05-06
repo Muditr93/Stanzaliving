@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Stanza</title>
+<link rel="shortcut icon" href="./Assets/favicon.png">
+<link rel="stylesheet" type="text/css" href="./Assets/Styles/style.css">
+<script type="text/javascript" src="./Src/myScript.js"></script>
+</head>
+<body>
+
+<div class="center">
+  <h2 class="mainHeading">STANZA vs. FLAT</h2>
+  <div class="flexBox">
+    <div class="leftNav" onclick="openLink(event, 'Tab3', 'left')">
+      <svg  id="leftArrow" class="svg-inline--fa pointers fa-angle-left fa-w-8 fa-3x theme-color-font" aria-hidden="true" data-prefix="fas" data-icon="angle-left" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" data-fa-i2svg="" style="display:none;"><path fill="currentColor" d="M31.7 239l136-136c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9L127.9 256l96.4 96.4c9.4 9.4 9.4 24.6 0 33.9L201.7 409c-9.4 9.4-24.6 9.4-33.9 0l-136-136c-9.5-9.4-9.5-24.6-.1-34z"></path></svg>
+    </div>
+    <div class="TabContent">
+      <div class="Tabs" id="Tab1" class="w3-animate-right">
+        <h2>Select Your Gender</h2>
+        <div class="imageContainer">
+          <img id="boy" onclick="selectCharacter('boy')" class="genderImages" src="./Assets/male.svg" alt="">
+          <img id="girl" onclick="selectCharacter('girl')" class="genderImages" src="./Assets/girl.svg" alt="">
+        </div>
+      </div>
+      <div id="Tab2" class="Tabs w3-animate-right"  style="display:none">
+        <h2>Select Your City</h2>
+        <div class="citiesBox">
+          <div class="Row">
+            <div class="city" onclick="selectCity('NewDelhi')">
+              <h2 class="cityLabel" id="NewDelhi">New Delhi</h2>
+            </div>
+            <div class="city" onclick="selectCity('Noida')">
+              <h2 class="cityLabel" id="Noida">Noida</h2>
+            </div>
+          </div>
+          <div class="Row">
+            <div class="city" onclick="selectCity('Gurugram')">
+              <h2 class="cityLabel" id="Gurugram">Gurgaon</h2>
+            </div>
+            <div class="city" onclick="selectCity('Dehradun')">
+              <h2 class="cityLabel" id="Dehradun">Dehradun</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="Tab3" class="Tabs w3-animate-right" style="display:none">
+        <div class="w3-container">
+          <table class="w3-table">
+            <tr>
+              <td> <span id="SelectedCity"> Noida</span> </td>
+              <td> <span> Tradional Flat</span> </td>
+              <td> <span> Stanza Lvivng</span> </td>
+            </tr>
+            <tr>
+              <td>Rent</td>
+              <td>5000</td>
+              <td>17000</td>
+            </tr>
+            <tr>
+              <td>Food and other supplies</td>
+              <td>4000</td>
+              <td>included</td>
+            </tr>
+            <tr>
+              <td>Cooking and staff</td>
+              <td>1500</td>
+              <td>Not Applicable</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="rightNav" onclick="openLink(event, 'Tab3', 'right')">
+      <svg  id="rightArrow" class="svg-inline--fa pointers fa-angle-right fa-w-8 fa-3x theme-color-font" aria-hidden="true" data-prefix="fas" data-icon="angle-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" data-fa-i2svg=""><path fill="currentColor" d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"></path></svg>
+    </div>
+  </div>
+  <progress id='progressBar' style="width:100%; margin-top:3em;" value="33" max="100">
+
+</div>
+
+</body>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</html>

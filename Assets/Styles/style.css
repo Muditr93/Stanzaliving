@@ -1,0 +1,103 @@
+html {
+  height: 100%;
+}
+@font-face {
+    font-family: gotham;
+    /*src: url(gothamReg.otf);*/
+    src: url('./Assets/gothamReg.otf');
+}
+body {
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+}
+.center {
+    text-align: center;
+    font-family: gotham;
+    margin: auto;
+    width: 60%;
+    padding: 10px;
+}
+.mainHeading{
+  color: #4EC5AD;
+  margin-bottom: 3em;
+}
+.TabContent{
+  flex: 8;
+}
+.leftNav,.rightNav{
+  flex: 1;
+}
+.flexBox{
+  display: flex;
+}
+.imageContainer{
+  img {
+    height: 115px;
+  }
+}
+.genderImages{
+  height: 115px;
+  cursor: pointer;
+  margin-right: 30px;
+  opacity: 0.5;
+}
+.genderImages:hover {
+  opacity: 0.8;
+}
+.theme-color-font {
+  font-size: 3em;
+  width: .5em;
+    color: #58CCB6 !important;
+}
+.citiesBox{
+  display: flex;
+  flex-direction: column;
+}
+.Row{
+  display: flex;
+  flex-direction: row;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+.city{
+  color: teal;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+td span{
+  color: #4EC5AD;
+  font-weight: 400;
+  font-size: 18px;
+}
+able {
+border-collapse: collapse;
+}
+table td {
+border: 2px solid teal;
+}
+table tr:first-child td {
+border-top: 0;
+}
+table tr td:first-child {
+border-left: 0;
+}
+table tr:last-child td {
+border-bottom: 0;
+}
+table tr td:last-child {
+border-right: 0;
+}
+.cityLabel{
+cursor: pointer;
+color:#93DCCD;
+opacity: 0.7;
+}
+.cityLabel:hover {
+opacity: 0.9;
+}
+.pointers{
+cursor: pointer;
+}
